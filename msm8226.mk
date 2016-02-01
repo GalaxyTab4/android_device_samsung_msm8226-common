@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/msm8974-common/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/msm8226-common/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -71,9 +71,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Audio
 PRODUCT_PACKAGES += \
     audiod \
-    audio_policy.msm8974 \
+    audio_policy.msm8226 \
     audio.a2dp.default \
-    audio.primary.msm8974 \
+    audio.primary.msm8226 \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
@@ -91,27 +91,27 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    copybit.msm8974 \
-    gralloc.msm8974 \
-    hwcomposer.msm8974 \
-    memtrack.msm8974
+    copybit.msm8226 \
+    gralloc.msm8226 \
+    hwcomposer.msm8226 \
+    memtrack.msm8226
 
 # IR
 PRODUCT_PACKAGES += \
-    consumerir.msm8974
+    consumerir.msm8226
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
-    device/samsung/msm8974-common/keylayout/cyttsp-i2c.kl:system/usr/keylayout/cyttsp-i2c.kl \
-    device/samsung/msm8974-common/keylayout/keypad_8960.kl:system/usr/keylayout/keypad_8960.kl \
-    device/samsung/msm8974-common/keylayout/Vendor_04e8_Product_7021.kl:system/usr/keylayout/Vendor_04e8_Product_7021.kl
+    device/samsung/msm8226-common/keylayout/cyttsp-i2c.kl:system/usr/keylayout/cyttsp-i2c.kl \
+    device/samsung/msm8226-common/keylayout/keypad_8960.kl:system/usr/keylayout/keypad_8960.kl \
+    device/samsung/msm8226-common/keylayout/Vendor_04e8_Product_7021.kl:system/usr/keylayout/Vendor_04e8_Product_7021.kl
 
 # Media
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml  \
-    device/samsung/msm8974-common/configs/media_codecs.xml:system/etc/media_codecs.xml
+    device/samsung/msm8226-common/configs/media_codecs.xml:system/etc/media_codecs.xml
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -133,11 +133,11 @@ PRODUCT_BOOT_JARS += qcmediaplayer
 
 # Power HAL
 PRODUCT_PACKAGES += \
-    power.msm8974
+    power.msm8226
 
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 
-# common msm8974
+# common msm8226
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
